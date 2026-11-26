@@ -14,6 +14,7 @@ fn main() {
             Err(e) => { println!("{}: read error {}", path, e); continue; }
         };
         let (compressed, stats) = engine::compress_with_stats(&data);
+        println!("Compressed first 40 bytes: {:?}", &compressed[..compressed.len().min(40)]);
         let decompressed = engine::decompress_chunk(&compressed);
         let mut h1 = Sha256::new();
         h1.update(&data);

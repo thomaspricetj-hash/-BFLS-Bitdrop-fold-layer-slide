@@ -56,41 +56,41 @@ HOST_CFLAGS = None
 CFLAGS_x86_64_pc_windows_msvc = None
 CFLAGS_x86_64-pc-windows-msvc = None
 debug.c
-entropy_common.c
 error_private.c
-pool.c
-threading.c
+entropy_common.c
 fse_decompress.c
+pool.c
 zstd_common.c
-fse_compress.c
+threading.c
 hist.c
+fse_compress.c
 huf_compress.c
 zstd_compress.c
 zstd_compress_literals.c
-zstd_compress_superblock.c
 zstd_compress_sequences.c
-zstd_fast.c
+zstd_compress_superblock.c
 zstd_double_fast.c
+zstd_fast.c
 zstd_lazy.c
-zstd_ldm.c
 zstd_opt.c
 zstd_preSplit.c
 zstdmt_compress.c
-zstd_ddict.c
-zstd_decompress.c
+zstd_ldm.c
 huf_decompress.c
+zstd_ddict.c
 zstd_decompress_block.c
+zstd_decompress.c
+cover.c
 divsufsort.c
 zdict.c
-cover.c
 zstd_v02.c
+zstd_v04.c
 zstd_v01.c
 fastcover.c
-zstd_v04.c
-zstd_v06.c
 zstd_v03.c
-zstd_v07.c
+zstd_v06.c
 zstd_v05.c
+zstd_v07.c
 CC_FORCE_DISABLE = None
 cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
 AR_x86_64-pc-windows-msvc = None
